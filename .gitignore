@@ -1,8 +1,10 @@
 # Compiled class file
 *.class
+*/package-lock.json
 
 # Log file
 *.log
+*/results
 
 # BlueJ files
 *.ctxt
@@ -23,9 +25,9 @@
 hs_err_pid*
 
 # Idea
-*/.idea
-*/.gradle
-*/build
-*/target
-*/bin
+.idea
+.gradle
+build
+target
+bin
 node_modules/
