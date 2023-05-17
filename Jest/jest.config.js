@@ -18,13 +18,12 @@ module.exports = {
   ],
 
   testEnvironmentOptions: {
-    url: "https://team-okp8.testit.software",
-    projectId: "9cc7c239-63d7-47b7-af0c-a307488b08b3",
-    privateToken: "ejhzdHM0NVpKREZvVzNVclRK",
-    configurationId: "2a7e3e25-9afa-4d52-8eea-54d80e4f7444",
-    testRunName: "Run",
-    adapterMode: 2,
-    certValidation: false,
-    automaticCreationTestCases: true,
+    url: 'URL',
+    privateToken: 'USER_PRIVATE_TOKEN',
+    projectId: 'PROJECT_ID',
+    configurationId: 'CONFIGURATION_ID',
+    testRunId: 'TEST_RUN_ID',
+    adapterMode: ADAPTER_MODE,
+    automaticCreationTestCases: AUTOMATIC_CREATION_TEST_CASES
   },
 };
