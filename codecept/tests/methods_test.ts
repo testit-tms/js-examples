@@ -40,10 +40,10 @@ Scenario(
 Scenario(
   'Add attachments success', ({ I }) => {
   I.addAttachments('Content', 'file01.txt');
-  I.addAttachments([__dirname + 'attachments/file02.txt']);
+  I.addAttachments([__dirname + '/attachments/file02.txt']);
   const paths = [
-    __dirname + 'attachments/file03.txt',
-    __dirname + 'attachments/file04.txt'
+    __dirname + '/attachments/file03.txt',
+    __dirname + '/attachments/file04.txt'
   ];
   I.addAttachments(paths);
 });
@@ -51,10 +51,10 @@ Scenario(
 Scenario(
   'Add attachments failed', ({ I }) => {
   I.addAttachments('Content', 'file01.txt');
-  I.addAttachments([__dirname + 'attachments/file02.txt']);
+  I.addAttachments([__dirname + '/attachments/file02.txt']);
   const paths = [
-    __dirname + 'attachments/file03.txt',
-    __dirname + 'attachments/file04.txt'
+    __dirname + '/attachments/file03.txt',
+    __dirname + '/attachments/file04.txt'
   ];
   I.addAttachments(paths);
   I.seeElement('//input');
@@ -88,10 +88,10 @@ Scenario(
     }
   ]);
   I.addAttachments('Content', 'file01.txt');
-  I.addAttachments([__dirname + 'attachments/file02.txt']);
+  I.addAttachments([__dirname + '/attachments/file02.txt']);
   const paths = [
-    __dirname + 'attachments/file03.txt',
-    __dirname + 'attachments/file04.txt'
+    __dirname + '/attachments/file03.txt',
+    __dirname + '/attachments/file04.txt'
   ];
   I.addAttachments(paths);
   I.addMessage('Message');
@@ -114,10 +114,10 @@ Scenario(
     }
   ]);
   I.addAttachments('Content', 'file01.txt');
-  I.addAttachments([__dirname + 'attachments/file02.txt']);
+  I.addAttachments([__dirname + '/attachments/file02.txt']);
   const paths = [
-    __dirname + 'attachments/file03.txt',
-    __dirname + 'attachments/file04.txt'
+    __dirname + '/attachments/file03.txt',
+    __dirname + '/attachments/file04.txt'
   ];
   I.addAttachments(paths);
   I.addMessage('Message');
