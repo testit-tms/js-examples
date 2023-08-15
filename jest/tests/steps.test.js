@@ -1,5 +1,10 @@
 const { join } = require('path');
 
+beforeEach(() => {
+  testit.title("Add namespace from steps");
+  testit.namespace("Test adapter jest");
+})
+
 test('steps With Title', () => {
   testit.step('Step01 Title');
   testit.step('Step02 Title');
