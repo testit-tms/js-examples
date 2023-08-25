@@ -1,0 +1,22 @@
+{
+  "name": "mocha-test",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w"
+  },
+  "author": {
+    "name": "Integration team",
+    "email": "integrations@testit.software"
+  },
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "@types/mocha": "^10.0.1",
+    "@types/node": "^20.3.3"
+  },
+  "dependencies": {
+    "mocha": "^10.2.0",
+    "testit-adapter-mocha": "^1.1.5"
+  }
+}
