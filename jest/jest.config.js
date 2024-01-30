@@ -6,7 +6,6 @@ module.exports = {
   testRegex: '.*.test.js$',
 
   testEnvironment: 'testit-adapter-jest',
-
   globalSetup: 'testit-adapter-jest/dist/globalSetup.js',
   globalTeardown: 'testit-adapter-jest/dist/globalTeardown.js',
   reporters: [
@@ -15,15 +14,5 @@ module.exports = {
       outputFile: "results/test-results.xml",
       ancestorSeparator: " > ",
     }]
-  ],
-
-  testEnvironmentOptions: {
-    url: 'URL',
-    privateToken: 'USER_PRIVATE_TOKEN',
-    projectId: 'PROJECT_ID',
-    configurationId: 'CONFIGURATION_ID',
-    testRunId: 'TEST_RUN_ID',
-    adapterMode: ADAPTER_MODE,
-    automaticCreationTestCases: AUTOMATIC_CREATION_TEST_CASES
-  },
+  ]
 };
