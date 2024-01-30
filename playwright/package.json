@@ -1,18 +1,16 @@
 {
-  "name": "cucumber-test",
+  "name": "playwright-test",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "cucumber-js"
+    "test": "playwright test"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@cucumber/cucumber": "^7.3.1"
-  },
-  "dependencies": {
-    "testit-adapter-cucumber": "^2.1.1"
+    "@playwright/test": "^1.23.0",
+    "testit-adapter-playwright": "^2.1.1"
   }
 }

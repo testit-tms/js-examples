@@ -67,7 +67,7 @@ Feature: AnnotationTests
     Then return false
 
   @ExternalId=With_workitem_ids_annotation_success
-  @WorkItemIds=123,321
+  @WorkItemIds=29282,321
   Scenario: With workitemids annotation success
     Then return true
 
@@ -94,7 +94,7 @@ Feature: AnnotationTests
   @Labels=Label1,Label2
   @Links={"url":"https://test01.example","title":"Example01","description":"Example01_description","type":"Issue"}
   @Links={"url":"https://test02.example","title":"Example02","description":"Example02_description","type":"Issue"}
-  @WorkItemIds=123,321
+  @WorkItemIds=29283,321
   Scenario: With all annotations failed
     Then return false
 
