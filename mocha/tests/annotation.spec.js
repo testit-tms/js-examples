@@ -73,11 +73,11 @@ describe("Check adding labels", function () {
 });
 describe("Check adding workItems", function () {
     it("With workItems annotation success 3", function () {
-        this.workItemsIds = ["4268"];
+        this.workItemsIds = ["29276", "321"];
         assert_1.default.equal(true, true);
     });
     it("With workItems annotation failed 3", function () {
-        this.workItemsIds = ["4268"];
+        this.workItemsIds = ["4268", "321"];
         assert_1.default.equal(true, false);
     });
 });
@@ -119,6 +119,7 @@ describe("Check adding all annotations", function () {
         this.description = "description all annotations adding success";
         this.links = links;
         this.labels = ["Label3", "Label4"];
+        this.workItemsIds = ["29277", "321"];
         assert_1.default.equal(true, true);
     });
     it("With all annotation failed", function () {
@@ -128,6 +129,7 @@ describe("Check adding all annotations", function () {
         this.description = "description all annotations adding failed";
         this.links = links;
         this.labels = ["Label5", "Label6"];
+        this.workItemsIds = ["4268", "321"];
         assert_1.default.equal(true, false);
     });
 });

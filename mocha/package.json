@@ -4,7 +4,8 @@
   "description": "",
   "scripts": {
     "build": "tsc",
-    "watch": "tsc -w"
+    "watch": "tsc -w",
+    "test": "mocha"
   },
   "author": {
     "name": "Integration team",
@@ -17,6 +18,6 @@
   },
   "dependencies": {
     "mocha": "^10.2.0",
-    "testit-adapter-mocha": "^1.1.5"
+    "testit-adapter-mocha": "^2.1.1"
   }
 }

@@ -126,7 +126,7 @@ Scenario('With links annotation failed',
 
 Scenario('With workitemids annotation success',
   {
-    workitemIds: ['123', '321']
+    workitemIds: ['29280', '321']
   },
   ({ I }) => {
   });
@@ -160,7 +160,7 @@ Scenario('With all annotations success',
         type: 'Issue'
       }
     ],
-    workitemIds: ['123', '321']
+    workitemIds: ['29281', '321']
   },
   ({ I }) => {
   });

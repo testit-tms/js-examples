@@ -1,9 +1,14 @@
 const { join } = require('path');
 
+beforeEach(() => {
+  testit.title("Add namespace from methods");
+  testit.namespace("Test adapter jest");
+})
+
 test('addLinks success', async () => {
   testit.addLinks([
-    { url: 'https://test01.example', title:  'Example01', description: 'Example01 description', type: 'Issue'},
-    { url: 'https://test02.example', title:  'Example02', description: 'Example02 description', type: 'Issue'},
+    { url: 'https://test01.example', title: 'Example01', description: 'Example01 description', type: 'Issue'},
+    { url: 'https://test02.example', title: 'Example02', description: 'Example02 description', type: 'Issue'},
   ]);
 
   expect(true).toBe(true);
@@ -23,7 +28,8 @@ test('addAttachments success', async () => {
   testit.addAttachments([join(__dirname, 'attachments/file02.txt')]);
   const paths = [
     join(__dirname, 'attachments/file03.txt'),
-    join(__dirname, 'attachments/file04.txt')
+    join(__dirname, 'attachments/file04.txt'),
+    join(__dirname, 'attachments/image.jpg'),
   ];
   testit.addAttachments(paths);
 
@@ -64,7 +70,8 @@ test('all Methods success', async () => {
   testit.addAttachments([join(__dirname, 'attachments/file02.txt')]);
   const paths = [
     join(__dirname, 'attachments/file03.txt'),
-    join(__dirname, 'attachments/file04.txt')
+    join(__dirname, 'attachments/file04.txt'),
+    join(__dirname, 'attachments/image.jpg')
   ];
   testit.addAttachments(paths);
 
