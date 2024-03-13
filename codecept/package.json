@@ -16,7 +16,7 @@
     },
     "dependencies": {
         "mocha-junit-reporter": "^2.2.0",
-        "testit-adapter-codecept": "^2.1.1",
+        "testit-adapter-codecept": "^2.1.3",
         "playwright": "^1.28.1"
     }
 }

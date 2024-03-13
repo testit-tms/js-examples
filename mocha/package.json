@@ -18,6 +18,6 @@
   },
   "dependencies": {
     "mocha": "^10.2.0",
-    "testit-adapter-mocha": "^2.1.1"
+    "testit-adapter-mocha": "^2.1.3"
   }
 }
