@@ -34,6 +34,16 @@ test('addLinks success', async () => {
   
     expect(true).toBe(false);
   });
+
+  test('addAttachments failed', async () => {
+    const fs = require('fs');
+	const path = 'C:/users/desktop/image.jpeg';
+	const imageData = fs.readFileSync(path);
+	testit.addAttachment("image.jpg", imageData, "image/jpeg"),
+    });
+
+    expect(true).toBe(false);
+  });
   
   test('addMessage success', async () => {
     testit.addMessage('Message');
