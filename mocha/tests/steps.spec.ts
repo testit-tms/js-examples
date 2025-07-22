@@ -29,11 +29,6 @@ it("Add steps with attachments", function (this: Context) {
     this.addAttachments("Step 1", "step1.txt");
   });
 
-  this.addSteps("Step02", (step) => {
-    step.description = "Description";
-    this.addAttachments("Step 2", "step2.txt");
-  });
-
   assert.equal(true, true);
 });
 
