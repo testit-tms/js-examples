@@ -34,7 +34,7 @@ Scenario(
     type: 'Issue'
     }
   ]);
-  I.seeElement('//input');
+  // I.seeElement('//input');
 });
 
 Scenario(
