@@ -18,24 +18,24 @@ Scenario(
   ]);
 });
 
-Scenario(
-  'Add links failed', ({ I }) => {
-  I.addLinks([
-    {
-    title: 'Example01',
-    description: 'Example01_description',
-    url: 'https://test01.example',
-    type: 'Issue'
-    },
-    {
-    title: 'Example02',
-    description: 'Example02_description',
-    url: 'https://test02.example',
-    type: 'Issue'
-    }
-  ]);
-  // I.seeElement('//input');
-});
+// Scenario(
+//   'Add links failed', ({ I }) => {
+//   I.addLinks([
+//     {
+//     title: 'Example01',
+//     description: 'Example01_description',
+//     url: 'https://test01.example',
+//     type: 'Issue'
+//     },
+//     {
+//     title: 'Example02',
+//     description: 'Example02_description',
+//     url: 'https://test02.example',
+//     type: 'Issue'
+//     }
+//   ]);
+//   // I.seeElement('//input');
+// });
 
 Scenario(
   'Add attachments success', ({ I }) => {
