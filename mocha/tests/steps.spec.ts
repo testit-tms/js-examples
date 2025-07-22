@@ -26,12 +26,12 @@ it("Add steps with title and description", function (this: Context) {
 it("Add steps with attachments", function (this: Context) {
   this.addSteps("Step01", (step) => {
     step.description = "Description";
-    this.addAttachments("Step");
+    this.addAttachments("Step 1", "step1.txt");
   });
 
   this.addSteps("Step02", (step) => {
     step.description = "Description";
-    this.addAttachments("Step 2");
+    this.addAttachments("Step 2", "step2.txt");
   });
 
   assert.equal(true, true);
