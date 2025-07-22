@@ -24,11 +24,11 @@ it("Add steps with title and description", function () {
 it("Add steps with attachments", function () {
     this.addSteps("Step01", (step) => {
         step.description = "Description";
-        this.addAttachments("Step");
+        this.addAttachments("Step 1", "step1.txt");
     });
     this.addSteps("Step02", (step) => {
         step.description = "Description";
-        this.addAttachments("Step 2");
+        this.addAttachments("Step 2", "step2.txt");
     });
     assert_1.default.equal(true, true);
 });
