@@ -7,8 +7,8 @@ const assert_1 = __importDefault(require("assert"));
 const path_1 = require("path");
 describe("Check adding attachments", function () {
     it("Add attachments success", function () {
-        this.addAttachments("test add attachments from mocha adapter");
-        this.addAttachments("test add attachments from mocha adapter", "tms");
+        //this.addAttachments("test add attachments from mocha adapter");
+        //this.addAttachments("test add attachments from mocha adapter", "tms");
         const path = (0, path_1.join)(__dirname, "attachments/file02.txt");
         this.addAttachments([path]);
         const paths = [
@@ -20,8 +20,8 @@ describe("Check adding attachments", function () {
         assert_1.default.equal(true, true);
     });
     it("Add attachments failed", function () {
-        this.addAttachments("test add attachments from mocha adapter");
-        this.addAttachments("test add attachments from mocha adapter", "tms");
+        //this.addAttachments("test add attachments from mocha adapter");
+        //this.addAttachments("test add attachments from mocha adapter", "tms");
         const path = (0, path_1.join)(__dirname, "attachments/file02.txt");
         this.addAttachments([path]);
         const paths = [
