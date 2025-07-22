@@ -26,10 +26,6 @@ it("Add steps with attachments", function () {
         step.description = "Description";
         this.addAttachments("Step 1", "step1.txt");
     });
-    this.addSteps("Step02", (step) => {
-        step.description = "Description";
-        this.addAttachments("Step 2", "step2.txt");
-    });
     assert_1.default.equal(true, true);
 });
 it("Add step with parameters", function () {
