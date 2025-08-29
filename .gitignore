@@ -35,3 +35,4 @@ node_modules/
 # VS Code
 **/.vs
 output/
+.tms.config.json
