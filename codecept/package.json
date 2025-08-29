@@ -3,7 +3,7 @@
     "version": "1.0.0",
     "private": true,
     "scripts": {
-        "pretest": "playwright install",
+        "_pretest": "playwright install",
         "test": "codeceptjs run --steps"
     },
     "devDependencies": {
@@ -18,6 +18,6 @@
     },
     "dependencies": {
         "mocha-junit-reporter": "^2.2.0",
-        "testit-adapter-codecept": "^2.1.1"
+        "testit-adapter-codecept": "^3.2.9"
     }
 }
