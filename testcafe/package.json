@@ -1,0 +1,23 @@
+{
+  "name": "testcafe-test",
+  "version": "1.0.0",
+  "description": "testcafe test example",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx testcafe chrome:headless --disable-search-engine-choice-screen --disable-native-automation tests/ -r testit"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/eslint-parser": "^7.22.9",
+    "@babel/preset-env": "^7.9.5",
+    "@types/minimatch": "^5.1.2",
+    "@types/node": "22.5.1",
+    "babel-plugin-add-module-exports": "^1.0.2",
+    "testcafe-reporter-testit": "^3.2.9-TMS-5.4"
+  },
+  "devDependencies": {
+    "testcafe": "^3.7.0"
+  }
+}
