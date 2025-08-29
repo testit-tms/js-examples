@@ -3,7 +3,7 @@
     "version": "1.0.0",
     "private": true,
     "scripts": {
-        "pretest": "playwright install",
+        "_pretest": "playwright install",
         "test": "codeceptjs run --steps"
     },
     "devDependencies": {
