@@ -3,5 +3,8 @@
   "privateToken": "USER_PRIVATE_TOKEN",
   "projectId": "PROJECT_ID",
   "configurationId": "CONFIGURATION_ID",
-  "testRunId": "TEST_RUN_ID"
+  "testRunId": "TEST_RUN_ID",
+  "_testRunName": "TEST_RUN_NAME",
+  "_adapterMode": 2,
+  "_automaticCreationTestCases": false
 }
