@@ -4,7 +4,7 @@
   "projectId": "PROJECT_ID",
   "configurationId": "CONFIGURATION_ID",
   "testRunId": "TEST_RUN_ID",
-  "testRunName": "TEST_RUN_NAME",
-  "adapterMode": 2,
-  "automaticCreationTestCases": false
+  "_testRunName": "TEST_RUN_NAME",
+  "_adapterMode": 2,
+  "_automaticCreationTestCases": false
 }
