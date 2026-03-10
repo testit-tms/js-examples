@@ -10,3 +10,5 @@ This repository contains samples for JavaScript testing frameworks and Test IT a
 * [Mocha](https://github.com/testit-tms/js-examples/tree/main/mocha)
 
 * [Playwright](https://github.com/testit-tms/js-examples/tree/main/playwright)
+
+* [Cypress](https://github.com/testit-tms/js-examples/tree/main/cypress)
