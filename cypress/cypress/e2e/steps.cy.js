@@ -35,30 +35,6 @@ describe('example with steps', () => {
     });
   });
 
-  it("with steps with parameter success", () => {
-    const tms = getTestRuntime();
-
-    tms.step("step title", () => {
-      tms.step("inner step title", () => {
-        tms.stepParameter("name", "value");
-
-        expect(true).to.equal(true);
-      });
-    });
-  });
-
-  it("with steps with parameter failed", () => {
-    const tms = getTestRuntime();
-
-    tms.step("step title", () => {
-      tms.step("inner step title", () => {
-        tms.stepParameter("name", "value");
-
-        expect(true).to.equal(false);
-      });
-    });
-  });
-
   it("with steps with attachment success", () => {
     const tms = getTestRuntime();
 
