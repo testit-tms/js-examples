@@ -1,5 +1,32 @@
-import { test, expect } from "@playwright/test";
+import { test as base, expect } from "@playwright/test";
 import { testit } from "testit-adapter-playwright";
+
+const test = base.extend<{ prepare: void }>({
+  prepare: async ({ }, use) => {
+    await testit.step("Before Hooks", async () => {
+      expect('passed').toBe('passed')
+      // expect('fail').toBe('passed') // Для поломки теста
+    });
+
+    await use()
+
+    await testit.step("After Hooks", async () => {
+      expect('passed').toBe('passed')
+    });
+  },
+});
+
+test('Тест поломки дерева', async ({ prepare }) => {
+  await testit.namespace('Отладка автотестов')
+  await testit.classname('Баг поломки дерева');
+  await testit.description('Сначал тест запусть успешно, после сломать в фикстуре и запустить ещё раз.');
+
+  await testit.step("Шаг теста", async () => { });
+  await testit.step("Шаг теста", async () => { });
+  await testit.step("Шаг теста", async () => { });
+});
+
+
 
 test("test with steps success", async () => {
   testit.step("Step01 Title", async () => {});
