@@ -4,8 +4,8 @@ import { testit } from "testit-adapter-playwright";
 const test = base.extend<{ prepare: void }>({
   prepare: async ({ }, use) => {
     await testit.step("Before Hooks", async () => {
-      expect('passed').toBe('passed')
-      //expect('fail').toBe('passed') // Для поломки теста
+      //expect('passed').toBe('passed')
+      expect('fail').toBe('passed') // Для поломки теста
     });
 
     await use()
