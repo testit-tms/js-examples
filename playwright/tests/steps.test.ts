@@ -60,3 +60,60 @@ test("test with steps with attachments", async () => {
 
   expect(true).toBe(true);
 });
+
+
+
+test('nested steps three levels deep', async () => {
+  testit.externalId('nested_steps_three_levels');
+  testit.namespace('Infowatch');
+  testit.classname('Steps');
+
+  await testit.step('Level 1 — preparation', async () => {
+    await testit.step('Level 2 — open context', async () => {
+      await testit.step('Level 3 — load config', async () => {
+        expect(true).toBe(true);
+      });
+
+      await testit.step('Level 3 — validate environment', async () => {
+        expect(process.version).toBeTruthy();
+      });
+    });
+
+    await testit.step('Level 2 — prepare data', async () => {
+      await testit.step('Level 3 — create fixtures', async () => {
+        const data = { id: 1, name: 'sample' };
+        expect(data.id).toBe(1);
+      });
+
+      await testit.step('Level 3 — seed database', async () => {
+        expect([1, 2, 3]).toContain(2);
+      });
+    });
+  });
+
+  await testit.step('Level 1 — execution', async () => {
+    await testit.step('Level 2 — run scenario', async () => {
+      await testit.step('Level 3 — step A', async () => {
+        expect('done').toBe('done');
+      });
+
+      await testit.step('Level 3 — step B', async () => {
+        expect(1 + 1).toBe(2);
+      });
+    });
+
+    await testit.step('Level 2 — collect results', async () => {
+      await testit.step('Level 3 — aggregate metrics', async () => {
+        expect(Math.max(1, 5, 3)).toBe(5);
+      });
+    });
+  });
+
+  await testit.step('Level 1 — cleanup', async () => {
+    await testit.step('Level 2 — teardown', async () => {
+      await testit.step('Level 3 — release resources', async () => {
+        expect(true).toBe(true);
+      });
+    });
+  });
+});
